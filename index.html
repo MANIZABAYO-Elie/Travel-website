@@ -17,9 +17,10 @@
             ><img src="./src/images/logo-tavel.jpg" class="w-[200px] h-[100px]"
           /></a>
           
-          <button class="md:hidden" onclick="toggleMenu()">
+          <button class="md:hidden">
               <i class="fa-solid fa-bars text-white text-4xl" id="menu-btn"></i>
           </button>
+          <!--menu for large screens -->
             <ul id="menu" class="hidden md:flex space-x-6 text-white">
                 <li><a href="#" class="hover:underline">Home</a></li>
                 <li><a href="#" class="hover:underline">About</a></li>
@@ -27,7 +28,8 @@
                 <li><a href="#" class="hover:underline">Contact</a></li>
             </ul>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-500 text-white space-y-2 p-4">
+        <!--Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-500 text-white space-y-2 p-4 text-center">
             <a href="#" class="block hover:underline">Home</a>
             <a href="#" class="block hover:underline">About</a>
             <a href="#" class="block hover:underline">Services</a>
@@ -36,9 +38,66 @@
           
        </div>
       </nav>
-      <!-- Content -->
     </header>
+    <!-- Content -->
+    <div class="h-[700px] lg:w-full" style="background-image: url(/src/images/Nyungwe-National-Park.jpg);">
+        <h1 class="text-white  pt-[400px] ml-[200px]  items-center text-center  font-bold h-[20px] text-[40px]
+          sm:w-[300px] md:w-[500px]">BOOK YOUR EXTRAORDINARY TOURS IN A THOUSAND HILLS</h1>
+    </div>
+    <section id="offer">
+           <div class="h-[1200px] shadow-2xl bg-gray-300">
+              <h1 class="text-center font-bold  text-[40px] pt-[50px]">Choose your Affordable Tour</h1>
+              <div class=" mx-[20px] mt-[20px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                   <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/Akagera.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Explore Akagera National park</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/KINGS-PALACE.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Visit King's Palace</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/Nyungwe-Canopy.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Explore Nyungwe park</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/virunga-n.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Explore Virunga National park</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/Twin-Lakes-Rwanda.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Burera and Ruhondo Twins Lake</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/ibere rya bigogwe.webp" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Explore Bigogwe</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/rugezi-1.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Explore Rugezi Wetland</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/Kivu-Lake.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Lake Kivu</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+                   </div>
+                    <div class="shadow-sm bg-white p-4 rounded-[10px] w-[360px] h-[400px]">
+                     <img src="./src/images/gishwati.jpg" class="w-[400px] h-[300px]">
+                     <h2 class="text-black font-bold text-[20px] pb-[20px]">Explore Gishwati Natural Forest</h2>
+                     <button class="rounded-[15px] bg-amber-600 w-[100px] hover:bg-amber-500">Book Now</button>
+              </div>
+       </div>
+    </section>
+
     <script>
+     //navBar script
       const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
