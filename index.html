@@ -10,44 +10,40 @@
   <body>
     <header class="header active">
       <!-- Navbar -->
-      <nav class="bg-blue-600 p-4">
+      <nav class="bg-gray-900">
         <div class="container mx-auto flex justify-between items-center">
           <!-- Logo or Brand -->
           <a href="#"
             ><img src="./src/images/logo-tavel.jpg" class="w-[200px] h-[100px]"
           /></a>
-          <!-- Mobile Menu Button (Hidden on Larger Screens) -->
-          <!-- <button class="lg:hidden text-white focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button> -->
-          <button class="lg:hidden">
-              <i class="  fa-solid fa-bars text-white text-4xl"></i>
+          
+          <button class="md:hidden" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars text-white text-4xl" id="menu-btn"></i>
           </button>
-           
-          <!-- Nav Links (Hidden on Mobile, Visible on Larger Screens) -->
-          <div class="hidden lg:flex space-x-4">
-            <a href="#" class="text-white hover:text-gray-200">Home</a>
-            <a href="#" class="text-white hover:text-gray-200">About</a>
-            <a href="#" class="text-white hover:text-gray-200">Services</a>
-            <a href="#" class="text-white hover:text-gray-200">Contact</a>
-          </div>
+            <ul id="menu" class="hidden md:flex space-x-6 text-white">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
         </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-500 text-white space-y-2 p-4">
+            <a href="#" class="block hover:underline">Home</a>
+            <a href="#" class="block hover:underline">About</a>
+            <a href="#" class="block hover:underline">Services</a>
+            <a href="#" class="block hover:underline">Contact</a>
+        </div>
+          
+       </div>
       </nav>
       <!-- Content -->
     </header>
-    
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
   </body>
 </html>
