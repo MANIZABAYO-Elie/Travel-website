@@ -17,11 +17,11 @@
             ><img src="./src/images/logo-tavel.jpg" class="w-[200px] h-[100px]"
           /></a>
           
-          <button class="md:hidden">
+          <button class="md:hidden mr-20px sm:mr-[30px]">
               <i class="fa-solid fa-bars text-white text-4xl" id="menu-btn"></i>
           </button>
           <!--menu for large screens -->
-            <ul id="menu" class="hidden md:flex space-x-6 text-white">
+            <ul id="menu" class="hidden md:flex space-x-6 text-white lg:mr-[80px]">
                 <li><a href="#" class="hover:underline">Home</a></li>
                 <li><a href="#" class="hover:underline">About</a></li>
                 <li><a href="#" class="hover:underline">Services</a></li>
@@ -29,7 +29,7 @@
             </ul>
         </div>
         <!--Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-500 text-white space-y-2 p-4 text-center">
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-500 text-white space-y-2 p-4 text-center ">
             <a href="#" class="block hover:underline">Home</a>
             <a href="#" class="block hover:underline">About</a>
             <a href="#" class="block hover:underline">Services</a>
@@ -40,9 +40,9 @@
       </nav>
     </header>
     <!-- Content -->
-    <div class="h-[700px] lg:w-full" style="background-image: url(/src/images/Nyungwe-National-Park.jpg);">
-        <h1 class="text-white  pt-[400px] ml-[200px]  items-center text-center  font-bold h-[20px] text-[40px]
-          sm:w-[300px] md:w-[500px]">BOOK YOUR EXTRAORDINARY TOURS IN A THOUSAND HILLS</h1>
+    <div class="h-[700px] md:w-[500px] sm:[300px] lg:w-full" style="background-image: url(/src/images/Nyungwe-National-Park.jpg);">
+        <h1 class="text-white text-center items-center  pt-[400px] ml-[200px]    font-bold h-[20px] text-[40px]
+          sm:w-[300px]  sm:mx-auto md:w-[500px]">BOOK YOUR EXTRAORDINARY TOURS IN A THOUSAND HILLS</h1>
     </div>
     <section id="offer">
            <div class="h-[1200px] shadow-2xl bg-gray-300">
@@ -99,8 +99,8 @@
     <script>
      //navBar script
       const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
+       const mobileMenu = document.getElementById('mobile-menu');
+       menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
     </script>
